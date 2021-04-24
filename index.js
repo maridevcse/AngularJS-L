@@ -97,10 +97,7 @@ $routeProvider
   templateUrl:'./home/home.html'
 })
 .when("/api",{
-  templateUrl:"./main/main.htm"
-})
-.when("/hang", {
-  templateUrl : "./hangmanGame/hangmanGame.html"
+  templateUrl:"./main/main.html"
 })
 .when("/blogClicked",{
 
