@@ -1,0 +1,41 @@
+<center>
+    <h2 style="color:blue;">User form</h2>
+</center>
+<div class="container">
+    <form style="margin: 0 auto"> 
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" ng-model="user.name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age" ng-model="user.age">
+        </div>
+
+        <div class="form-group">
+            <label for="addres">Address</label>
+            <input type="text" class="form-control" id="address" ng-model="user.Address">
+          </div>
+
+        <button ng-click="formSubmit()" class="btn btn-default">Submit</button>
+      </form>
+</div>
+
+
+
+
+<div class="container">
+
+    <div ng-repeat="data in userArray" class="box" ng-click="userboxclicked($index)">
+        <p>Name:{{data.name}}</p>
+        <p>Age:{{data.age}}</p>
+        <p>Address:{{data.Address}}</p>
+    </div>
+
+</div>
+
+
+
+
+
+
